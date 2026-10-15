@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f4f4f0">
+    <meta name="description" content="Shop thoughtfully chosen audio, desk, mobile, and home technology at Circuit Supply.">
+    <title>Shop all — Circuit Supply</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body data-page="shop">
+    <div id="site-header"></div>
+    <main>
+      <section class="page-intro wrap shop-intro">
+        <div><span class="eyebrow">THE GOOD STUFF / VOL. 01</span><h1>Everyday, <em>upgraded.</em></h1><p>Useful by design. Nice to live with. Here's everything we can't stop reaching for.</p></div>
+        <span class="intro-index mono">COLLECTION 001<br>08 PIECES · 4 CATEGORIES</span>
+      </section>
+      <section class="shop-layout wrap">
+        <aside class="shop-sidebar">
+          <span class="eyebrow">BROWSE BY</span>
+          <button class="filter-chip is-active" data-filter="All">Everything <span>08</span></button>
+          <button class="filter-chip" data-filter="Audio">Audio <span>02</span></button>
+          <button class="filter-chip" data-filter="Desk">Desk <span>02</span></button>
+          <button class="filter-chip" data-filter="Mobile">Mobile <span>02</span></button>
+          <button class="filter-chip" data-filter="Home">Home <span>02</span></button>
+          <div class="sidebar-note"><span class="live-dot"></span><p>Every item is tested, considered, and picked by a real person.</p></div>
+        </aside>
+        <div class="shop-main">
+          <div class="shop-toolbar"><span class="mono" data-product-count aria-live="polite">ALL PIECES</span><label class="shop-search" for="shop-search"><span class="visually-hidden">Search the collection</span><input id="shop-search" type="search" placeholder="Search the collection" aria-label="Search the collection"><span aria-hidden="true">⌕</span></label><label class="sort-label" for="sort-products">SORT BY <select id="sort-products"><option value="featured">Featured</option><option value="price-low">Price: low to high</option><option value="price-high">Price: high to low</option><option value="name">Name</option></select></label></div>
+          <div class="product-grid shop-product-grid" data-product-grid="shop"></div>
+          <p class="shop-endnote mono">THAT'S THE SHORTLIST. NO FILLER.</p>
+        </div>
+      </section>
+    </main>
+    <div id="site-footer"></div>
+  </body>
+</html>
